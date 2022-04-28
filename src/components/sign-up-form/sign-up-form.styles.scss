@@ -1,0 +1,43 @@
+.sign-up-container {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-self: space-between;
+  margin-left: auto;
+  margin-right: auto;
+
+  .form-signup{
+    width: 50%;
+
+    .button-signup{
+      width: 100%;
+    }
+  }
+
+  .login-header{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 15px;
+    
+  }
+
+  h2 {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width:576px) {
+  .sign-up-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .form-signup{
+      width: 100%;
+    }
+  }
+  
+}
