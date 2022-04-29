@@ -10,6 +10,20 @@
   top: 50px;
   right: 20vw;
   z-index: 5;
+
+  .empty-cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    .no-item-text{
+      font-weight: bold;
+      color:black;
+    }
+  }
   
   .cart-header {
     width: 100%;
@@ -121,8 +135,11 @@
   
   
   }
+
   
-  @media (max-width:900px) {
+  
+  
+  @media (max-width:776px) {
     .cart-dropdown-container {
       width: 90vw;
       height: 90vh;

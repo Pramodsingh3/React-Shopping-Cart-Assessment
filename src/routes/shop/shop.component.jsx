@@ -1,10 +1,10 @@
 import { useContext,useEffect,useState } from 'react';
 
 import ProductCard from '../../components/product-card/product-card.component';
-import { useLocation } from 'react-router-dom';
+
 import { ProductsContext } from '../../contexts/products.context';
 import { HomeContext } from '../../contexts/home.context';
-import Button from '../../components/button/button.component';
+
 
 import * as ProductsUtils from '../../utils/products/products.utils'
 import * as HomeUtils from '../../utils/home/home.utils'

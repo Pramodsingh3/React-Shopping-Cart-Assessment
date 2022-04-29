@@ -26,7 +26,7 @@ return (
           <CloseIcon className="close-icon" />
         </div>
       </header>
-      <div className="cart-items">
+     {cartCount? <div className="cart-items">
         {cartItems.map((item) => (
           <CartItem key={item.id} cartItem={item} />
         ))}
@@ -39,16 +39,22 @@ return (
           />
           <p className="slog">You won't find it cheaper anywhere</p>
         </section>
+      </div>:
+      <div className="empty-cart">
+        <span className="no-item-text">No items in your cart</span>
+        <span>You favourite item just a click away</span>
       </div>
+        }
 
       <footer className="button-container-footer">
-        <span>Promo code can be applied at payment page</span>
+       {cartCount?<span>Promo code can be applied at payment page</span>:null}
         <Button onClick={goToCheckoutHandler}>
-          <div className="button-body">
+         {cartCount? <div className="button-body">
             <span>Proceed to Checkout</span>
 
             <span>{`${cartTotal} `} &#8680;</span>
           </div>
+          :<span>Start Shopping</span>}
         </Button>
       </footer>
     </div>
